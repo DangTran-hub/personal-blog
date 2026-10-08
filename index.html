@@ -1,12 +1,146 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>DangTran-blog</title>
-        <meta charset="utf-8">
-        
-    </head>
+<html lang="vi">
 
-    <body>
-        
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Cá Nhân - Trần Minh Hải Đăng</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- Thanh Điều Hướng (Nav) -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">HD<span>.Blog</span></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-item active" data-target="home">Home</a></li>
+                    <li><a href="#about" class="nav-item" data-target="about">About</a></li>
+                    <li><a href="#contact" class="nav-item" data-target="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Nội dung chính -->
+    <main class="main-content">
+
+        <!-- Trang Home -->
+        <section id="home" class="page-section active">
+            <div class="container">
+                <div class="welcome-box">
+                    <h1>Chào mừng đến với Blog của tôi!</h1>
+                    <p>Đây là nơi tôi chia sẻ kiến thức, dự án và hành trình học tập.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trang About -->
+        <section id="about" class="page-section">
+            <div class="container">
+
+                <!-- Header hồ sơ cá nhân -->
+                <div class="profile-header">
+                    <div class="avatar-wrapper">
+                        <img src="truoc.jpg" alt="Trần Minh Hải Đăng" class="avatar-img">
+                    </div>
+                    <div class="profile-details">
+                        <span class="badge">ĐH Bách Khoa Hà Nội</span>
+                        <h2>Trần Minh Hải Đăng</h2>
+                        <p class="role">Sinh viên Kỹ thuật Điện tử - Viễn thông (K66 - ET1)</p>
+                        <p class="bio">Đam mê sáng tạo công nghệ, lập trình web và nghiên cứu các hệ thống điện tử viễn
+                            thông hiện đại.</p>
+                    </div>
+                </div>
+
+                <!-- Khối Thông tin: Học vấn, Lĩnh vực & Sở thích -->
+                <div class="info-grid">
+
+                    <!-- Khối Học Vấn -->
+                    <div class="card">
+                        <div class="card-title">
+                            <span class="icon"></span>
+                            <h3>Học Vấn</h3>
+                        </div>
+                        <ul class="info-list">
+                            <li><strong>Trường:</strong> Đại học Bách khoa Hà Nội</li>
+                            <li><strong>Đơn vị:</strong> Trường Điện - Điện tử</li>
+                            <li><strong>Ngành học:</strong> Kỹ thuật Điện tử - Viễn thông</li>
+                            <li><strong>Lớp khóa:</strong> K66 (ET1)</li>
+                            <li><strong>MSSV:</strong> 20213871</li>
+                        </ul>
+                    </div>
+
+                    <!-- Khối Lĩnh Vực -->
+                    <div class="card">
+                        <div class="card-title">
+                            <span class="icon"></span>
+                            <h3>Lĩnh Vực</h3>
+                        </div>
+                        <p class="card-text">Nghiên cứu và phát triển kỹ năng thuộc các lĩnh vực:</p>
+                        <div class="tags-container">
+                            <span class="tag">Điện tử - Viễn thông</span>
+                            <span class="tag">Lập trình Web (HTML/CSS/JS)</span>
+                            <span class="tag">Xử lý tín hiệu</span>
+                            <span class="tag">Hệ thống nhúng & IoT</span>
+                        </div>
+                    </div>
+
+                    <!-- Khối Sở Thích -->
+                    <div class="card">
+                        <div class="card-title">
+                            <span class="icon"></span>
+                            <h3>Sở Thích</h3>
+                        </div>
+                        <ul class="info-list bullet">
+                            <li>Chạy bộ</li>
+                            <li>Sưu tầm Playlist Spotify</li>
+                            <li>Tìm hiểu công nghệ mới & Viết code</li>
+                            <li>Đọc sách chuyên ngành & Khám phá thiết bị điện tử</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Khối Thẻ Sinh Viên Bách Khoa (Lật 3D) -->
+                <div class="student-id-section">
+                    <div class="section-heading">
+                        <h3>Thẻ Sinh Viên Bách Khoa</h3>
+                        <p>Rê chuột (hoặc nhấn) vào thẻ để xem thông tin mặt sau</p>
+                    </div>
+
+                    <div class="flip-card-container">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <!-- Mặt trước -->
+                                <div class="flip-card-front">
+                                    <img src="truoc.jpg" alt="Thẻ sinh viên mặt trước">
+                                </div>
+                                <!-- Mặt sau -->
+                                <div class="flip-card-back">
+                                    <img src="sau.jpg" alt="Thẻ sinh viên mặt sau">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Trang Contact -->
+        <section id="contact" class="page-section">
+            <div class="container">
+                <h2>Thông Tin Liên Hệ</h2>
+                <p>Email: dang.tm213871@sis.hust.edu.vn</p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+
 </html>
